@@ -23,12 +23,13 @@ export default {
 
 <style lang="scss">
 :root {
-  --background-body: #24282F;
-  --background-card: #3C3E44;
-  --text-white: #FFFFFF;
-  --text-gray: #c0c0c0;
-  --text-orange: #FF9800;
+  --background-body: #000000;
+    --background-card: #cb52e1;
+    --text-white: #ffffff;
+    --text-gray: #161515;
+    --text-orange: #161515;
 }
+
 * {
   box-sizing: border-box;
   margin: 0;

@@ -1,6 +1,12 @@
 <template>
   <div class="container">
-    <h1>Rick And Morty</h1>
+    <div class="image">
+      <img
+        class="w-34 justify-center"
+        src="https://occ-0-1722-1723.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABeJtBpd7gVufNBcVqvz9HPneSuK06oCuSWVIe1rbvL9yoBfZbHbUhjLgU0yv1DoOG8gWtyFUjonoxF132iuRBPNf_LoVM6tKrbKc.png?r=871"
+        alt=""
+      />
+    </div>
     <FilterByStatus />
     <FilterByName />
     <ListCharacters />
@@ -8,26 +14,28 @@
 </template>
 
 <script>
-import ListCharacters from '@/components/ListCharacters'
-import FilterByStatus from '@/components/FilterByStatus'
-import FilterByName from '@/components/FilterByName'
+import ListCharacters from "@/components/ListCharacters";
+import FilterByStatus from "@/components/FilterByStatus";
+import FilterByName from "@/components/FilterByName";
 export default {
-  name: 'App',
+  name: "App",
   components: {
     ListCharacters,
     FilterByStatus,
-    FilterByName
-  }
-}
+    FilterByName,
+  },
+};
 </script>
 
 <style lang="scss">
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap");
+
 :root {
   --background-body: #000000;
-    --background-card: #cb52e1;
-    --text-white: #ffffff;
-    --text-gray: #161515;
-    --text-orange: #161515;
+  --background-card: #52afe1;
+  --text-white: #ffffff;
+  --text-gray: #161515;
+  --text-orange: #161515;
 }
 
 * {
@@ -38,18 +46,29 @@ export default {
 body {
   background-color: var(--background-body);
   color: var(--text-white);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Sora", sans-serif;
 }
 h1 {
   margin-bottom: 3rem;
   text-align: center;
 }
 .container {
-  width: 980px;
+  width: 70%;
   max-width: 90%;
-  margin: 5rem auto;
+  margin: 3rem auto;
+}
+.container h1 {
+  font-variant: small-caps;
+  font-size: xx-large;
 }
 img {
   width: 100%;
+}
+.image {
+  display: flex;
+  width: 35rem;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 2rem;
 }
 </style>

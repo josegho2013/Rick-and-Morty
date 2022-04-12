@@ -38,7 +38,7 @@ export default {
   grid-template-columns: repeat(4, 1fr);
   border-radius: 10px;
   overflow: hidden;
-  font-size: x-large;
+  font-size: large;
   .item {
     padding: 1rem 0.5rem;
     background-color: var(--background-card);

@@ -36,8 +36,8 @@ export default {
     width: 400px;
     border: none;
     border-radius: 10px;
-    padding: 0 0.5rem;
-    font-size: x-large;
+    padding: 1rem;
+    font-size: large;
   }
 }
 </style>
